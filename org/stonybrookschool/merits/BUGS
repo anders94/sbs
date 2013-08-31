@@ -1,0 +1,8 @@
+known bugs:
+
+  if you try to edit an event that is larger than the maximum int 
+  number of seconds away in either direction from now( ), you will
+  get a SQL exception in DBRoutines.getEvent( eventId ). you will 
+  still be able to edit the event, but the date and time displayed
+  will be now( ) rather than the event's date and time.
+
